@@ -1,5 +1,12 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from "./styles";
+import * as RadioGroup from "@radix-ui/react-radio-group";
+import {
+  CloseButton,
+  Content,
+  Overlay,
+  TransactionType,
+  TransactionTypeButton,
+} from "./styles";
 import { ArrowCircleDown, ArrowCircleUp, X } from "phosphor-react";
 
 export function NewTransactionModal() {
@@ -11,7 +18,7 @@ export function NewTransactionModal() {
         <Dialog.Title>Nova transação</Dialog.Title>
 
         <CloseButton>
-            <X size={24}/>
+          <X size={24} />
         </CloseButton>
 
         <form action="">
@@ -20,20 +27,19 @@ export function NewTransactionModal() {
           <input type="text" placeholder="Categoria" required />
 
           <TransactionType>
-            <TransactionTypeButton variant="income">
-                <ArrowCircleUp size={24}/>
-                Entrada
+            <TransactionTypeButton variant="income" value="income">
+              <ArrowCircleUp size={24} />
+              Entrada
             </TransactionTypeButton>
 
-            <TransactionTypeButton variant="outcome">
-                <ArrowCircleDown size={24}/>
-                Saida
+            <TransactionTypeButton variant="outcome" value="outcome">
+              <ArrowCircleDown size={24} />
+              Saida
             </TransactionTypeButton>
           </TransactionType>
 
           <button type="submit">Cadastrar</button>
         </form>
-
       </Content>
     </Dialog.Portal>
   );
