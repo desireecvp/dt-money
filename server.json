@@ -8,7 +8,6 @@
       "price": 14000,
       "createdAt": "2024-05-21T14:56:01.368Z"
     },
-
     {
       "id": 2,
       "description": "Hamburger",
@@ -17,7 +16,6 @@
       "price": 60,
       "createdAt": "2024-05-21T14:30:01.368Z"
     },
-
     {
       "id": 3,
       "description": "Ignite Rocketseat",
@@ -25,6 +23,30 @@
       "category": "Educação",
       "price": 1980,
       "createdAt": "2024-05-21T14:24:01.368Z"
+    },
+    {
+      "description": "Desenvolvimento de App",
+      "price": 10000,
+      "category": "Venda",
+      "type": "income",
+      "createdAt": "2024-05-27T14:08:47.136Z",
+      "id": 4
+    },
+    {
+      "description": "Iogurte",
+      "price": 4,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-05-27T14:28:50.596Z",
+      "id": 5
+    },
+    {
+      "description": "Pastel",
+      "price": 5,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2024-05-27T14:29:06.414Z",
+      "id": 6
     }
   ]
 }
